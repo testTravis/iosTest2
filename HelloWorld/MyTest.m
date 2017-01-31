@@ -3,8 +3,6 @@
 @interface MyTest : GHTestCase { }
 @end
 
-@implementation MyTest
-
 - (void)testStrings1 {       
   NSString *string1 = @"a string";
   GHTestLog(@"I can log to the GHUnit test console: %@", string1);
