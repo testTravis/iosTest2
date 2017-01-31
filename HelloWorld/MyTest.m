@@ -5,7 +5,7 @@
 
 @implementation MyTest
 
-- (void)testStrings {       
+- (void)testStrings1 {       
   NSString *string1 = @"a string";
   GHTestLog(@"I can log to the GHUnit test console: %@", string1);
   
@@ -17,4 +17,8 @@
   GHAssertEqualObjects(string1, string2, @"A custom error message. string1 should be equal to: %@.", string2);
 }
 
+- (void)testStrings2 {    
+   XCTAssertTrue(["8" isEqualToString:@"8"], @"Part 1 past - 8 is  8.");
+XCTAssertTrue(["8" isEqualToString:@"7"], @"Part 2 failed - 7 is not 8."); 
+}
 @end
