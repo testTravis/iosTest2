@@ -26,5 +26,6 @@
 -(IBAction)showLabel{
     label.text = @"Hello World";
 }
-
+XCTAssertTrue(["8" isEqualToString:@"8"], @"Part 1 past - 8 is  8.");
+XCTAssertTrue(["8" isEqualToString:@"7"], @"Part 2 failed - 7 is not 8.");
 @end
